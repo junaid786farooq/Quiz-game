@@ -26,6 +26,3 @@ The Computer Quiz covers a variety of topics related to computer hardware and te
 
 Contributions to the Computer Quiz program are welcome! If you have ideas for new questions, improvements to the quiz, or bug fixes, feel free to open an issue or submit a pull request. Let's make the quiz even more comprehensive and enjoyable together!
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
