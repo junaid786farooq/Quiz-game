@@ -1,28 +1,50 @@
-# Computer Quiz
+# Computer Quiz Program
 
-Welcome to the Computer Quiz program! This is a simple quiz game designed to test your knowledge of computer terminology and technology. Players are asked a series of questions and receive feedback on their answers.
-
-## How to Play
-
-1. Clone the repository to your local machine.
-2. Make sure you have Python installed on your machine.
-3. Navigate to the directory where the program file (`computer_quiz.py`) is located.
-4. Run the program using Python.
-5. Answer each question presented in the quiz.
-6. After answering all the questions, your total score and percentage of correct answers will be displayed.
-
-## Quiz Overview
-
-The Computer Quiz covers a variety of topics related to computer hardware and technology. Players are asked to provide the correct acronyms or full forms for common computer terms.
+This is a Python program that quizzes users on basic computer-related questions. Users are prompted to answer a series of questions, and their responses are compared to the correct answers to determine their score.
 
 ## Features
 
-- Simple text-based interface.
-- Questions covering a range of computer-related topics.
-- Immediate feedback on correct and incorrect answers.
-- Calculation of total score and percentage of correct answers at the end of the quiz.
+- Quizzes users on 10 computer-related questions.
+- Displays correct answers if the user's response is incorrect.
+- Calculates the user's score and percentage based on the number of correct answers.
+
+## How to Use
+
+1. **Run the Program:**
+   - Execute the script in a Python environment.
+
+2. **Input Instructions:**
+   - The program will ask if you want to play the quiz.
+   - Answer 'yes' to start the quiz or any other input to quit.
+   - For each question, type your answer and press enter.
+
+3. **Output:**
+   - The program will display "Correct" if your answer is correct and "Wrong!" followed by the correct answer if your answer is incorrect.
+   - At the end of the quiz, the program will display your score out of 10 and the percentage of correct answers.
+
+## Example
+
+Welcom to mu computer quiz! <br>
+Do you want to play? yes <br>
+Okay! Let's play :) <br>
+What does CPU stand for? <br>
+Answer : central processing unit <br>
+Correct <br>
+Your score is: 1 <br>
+... <br>
+... <br>
+You got 7 out of 10 questions correctly.<br>
+You percentage is: 70.0 %
+
+## Requirements
+
+- Python 3.x
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Contributions
 
-Contributions to the Computer Quiz program are welcome! If you have ideas for new questions, improvements to the quiz, or bug fixes, feel free to open an issue or submit a pull request. Let's make the quiz even more comprehensive and enjoyable together!
+Contributions are welcome! If you have any suggestions, improvements, or bug fixes, feel free to open an issue or submit a pull request.
 
