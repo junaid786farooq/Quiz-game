@@ -9,63 +9,71 @@ if playing != "yes":
 
 print("Okay! Let's play :)")
 
+quiz = {
+    "question1" : {
+        "question" : "What does CPU stand for? ",
+        "answer" : "central processing unit"
+        },
+
+    "question2" : {
+        "question" : "What does GPU stand for? ",
+        "answer" : "graphics processing unit"
+        },
+
+    "question3" : {
+        "question" : "What does RAM stand for? ",
+        "answer" : "random access memory"
+        },
+
+    "question4" : {
+        "question" : "What does ROM stand for? ",
+        "answer" : "read only memory"
+        },
+
+    "question5" : {
+        "question" : "What does SSD stand for? ",
+        "answer" : "solid state drive"
+        },
+
+    "question6" : {
+        "question" : "What does HDD stand for? ",
+        "answer" : "hard disk drive"
+        },
+
+    "question7" : {
+        "question" : "What does USB stand for? ",
+        "answer" : "universal serial bus"
+        },
+
+    "question8" : {
+        "question" : "What does DVD stand for? ",
+        "answer" : "digital video disc"
+        },
+
+    "question9" : {
+        "question" : "What does DVR stand for? ",
+        "answer" : "digital video recorder"
+        },
+
+    "question10" : {
+        "question" : "What does PC stand for? ",
+        "answer" : "personal computer"
+        }  
+    }
+
 score = 0
 
-answer = input("What does CPU stand for? ")
-if answer.lower() == "central processing unit":
-    print("Correct!")
-    score += 1
-else:
-    print("Incorrect!")
+for key, value in quiz.items():
+    print(value["question"])
+    answer = input("Answer : ")
 
-answer = input("What does GPU stand for? ")
-if answer.lower() == "graphics processing unit":
-    print("Correct!")
-    score += 1
-else:
-    print("Incorrect!")
+    if answer.lower() == value["answer"]:
+        print("Correct")
+        score += 1
+        print("Your score is:", score )
+    else:
+        print("Wrong!")
+        print("The answer is:", value["answer"])
 
-answer = input("What does RAM stand for? ")
-if answer.lower() == "random access memory":
-    print("Correct!")
-    score += 1
-else:
-    print("Incorrect!")
-
-answer = input("What does ROM stand for? ")
-if answer.lower() == "read only memory":
-    print("Correct!")
-    score += 1
-else:
-    print("Incorrect!")
-
-answer = input("What does SSD stand for? ")
-if answer.lower() == "solid state drive":
-    print("Correct!")
-    score += 1
-else:
-    print("Incorrect!")
-
-answer = input("What does HDD stand for? ")
-if answer.lower() == "hard disk drive":
-    print("Correct!")
-    score += 1
-else:
-    print("Incorrect!")
-
-answer = input("What does USB stand for? ")
-if answer.lower() == "universal serial bus":
-    print("Correct!")
-    score += 1
-else:
-    print("Incorrect!")
-
-answer = input("What does DVD stand for? ")
-if answer.lower() == "digital video disc":
-    print("Correct!")
-    score += 1
-else:
-    print("Incorrect!")
-
-print("You got " + str(score) + " questions correct!")
-print("You got " + str((score / 8) * 100) + "%")
+print("You got " + str(score) + " out of 10 questions correctly.")
+print("You percentage is : " + str((score / 10) * 100) + " %")
